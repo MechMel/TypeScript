@@ -1,7 +1,7 @@
 interface Map<K, V> {
     clear(): void;
     /**
-     * @returns true if an element in the Map existed and has been removed, or false if the element does not exist.
+     * @returns true if an element in the Map existed and has been removed, or false if the element did not exist.
      */
     delete(key: K): boolean;
     /**
@@ -77,7 +77,7 @@ interface Set<T> {
     clear(): void;
     /**
      * Removes a specified value from the Set.
-     * @returns Returns true if an element in the Set existed and has been removed, or false if the element does not exist.
+     * @returns Returns true if an element in the Set existed and has been removed, or false if the element did not exist.
      */
     delete(value: T): boolean;
     /**
@@ -113,7 +113,7 @@ interface WeakSet<T extends WeakKey> {
     add(value: T): this;
     /**
      * Removes the specified element from the WeakSet.
-     * @returns Returns true if the element existed and has been removed, or false if the element does not exist.
+     * @returns Returns true if the element existed and has been removed, or false if the element did not exist.
      */
     delete(value: T): boolean;
     /**
